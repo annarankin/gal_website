@@ -82,19 +82,23 @@ nav {
 /*-----------------------------*/
 /*  Social Media Feeds Section  */
 /*-----------------------------*/
-
-.social-media-feeds {
-  background-color: #dadada;
-  padding: 1em;
+.social-media-feeds H1 {
+  text-align: center;
 }
 
 .social-media-feeds #instagram-feed,
 .social-media-feeds #facebook-feed,
 .social-media-feeds #twitter-feed {
-  background-color: white;
+  background-color: #dadada;
   margin: 0.5em
 }
 
+/*-----------------------------*/
+/*  Sponsors Section  */
+/*-----------------------------*/
+.sponsors H1 {
+  text-align: center;
+}
 
 /*-----------------*/
 /*  Media Queries  */
