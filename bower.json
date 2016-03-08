@@ -1,0 +1,18 @@
+{
+  "name": "gals_website",
+  "homepage": "https://github.com/annarankin/gals_website",
+  "authors": [
+    "anna rankin <annanotabanana@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,103 @@
+/*-----------------------------*/
+/* Utility & universal styling */
+/*-----------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 1em 10%;
+}
+
+.placeholder-img {
+  background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
+  background-size: cover;
+  background-position: center;
+}
+
+p.spotlighted {
+  font-size: 1.25em;
+}
+
+.padded {
+  padding: 0.5em;
+}
+
+/*-------------------*/
+/*    Nav Styling    */
+/*-------------------*/
+
+nav {
+  background-color: #ededed;
+}
+nav .logo {
+    display: inline-block;
+    padding: 2em 3em;
+    background-color: #dadada;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/*--------------------*/
+/*  About Us Section  */
+/*--------------------*/
+
+#team-photo {
+  padding: 25% 50%;
+  width 100%;
+}
+
+/*------------------*/
+/*  Meetup Section  */
+/*------------------*/
+
+.upcoming-events {
+  background-color: #dadada;
+  padding: 1em;
+}
+.upcoming-events .event {
+  text-align: center;
+  border: 1px solid black;
+  margin: 0.5em 0;
+  color: #FFF;
+}
+.upcoming-events .event .header {
+  background-color: #555;
+  padding: 1em 0.25em;
+}
+.upcoming-events .event h1 {
+  font-size: 1em;
+  margin: 0;
+}
+.upcoming-events .event .rsvp button {
+  background-color: #FF4136;
+  border: none;
+
+}
+/*-----------------*/
+/*  Media Queries  */
+/*-----------------*/
+
+/* Small screens & up */
+@media screen and (min-width: 35.5em) {
+
+}
+/* Medium screens & up */
+@media screen and (min-width: 48em) {
+  #team-photo {
+    padding: 45% 50%;
+    width 100%;
+  }
+}
+/* Large screens & up */
+@media screen and (min-width: 64em) {
+  
+}
+/* x-Large screens & up */
+@media screen and (min-width: 80em) {
+  
+}
