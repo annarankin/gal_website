@@ -78,6 +78,24 @@ nav {
   border: none;
 
 }
+
+/*-----------------------------*/
+/*  Social Media Feeds Section  */
+/*-----------------------------*/
+
+.social-media-feeds {
+  background-color: #dadada;
+  padding: 1em;
+}
+
+.social-media-feeds #instagram-feed,
+.social-media-feeds #facebook-feed,
+.social-media-feeds #twitter-feed {
+  background-color: white;
+  margin: 0.5em
+}
+
+
 /*-----------------*/
 /*  Media Queries  */
 /*-----------------*/
@@ -95,9 +113,9 @@ nav {
 }
 /* Large screens & up */
 @media screen and (min-width: 64em) {
-  
+
 }
 /* x-Large screens & up */
 @media screen and (min-width: 80em) {
-  
+
 }
