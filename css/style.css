@@ -15,6 +15,12 @@ section {
   background-position: center;
 }
 
+.placeholder-icon {
+  background-image: url(http://pmaadvantage.com/wp-content/uploads/2013/09/Icon-Placeholder.png);
+  background-size: cover;
+  background-position: center;
+}
+
 p.spotlighted {
   font-size: 1.25em;
 }
@@ -76,7 +82,16 @@ nav {
 .upcoming-events .event .rsvp button {
   background-color: #FF4136;
   border: none;
+}
 
+.photos {
+  display: flex;
+}
+
+.photos > div {
+ padding: 15%;
+ width: 34%;
+ border: 1px solid;
 }
 
 /*-----------------------------*/
@@ -87,24 +102,51 @@ nav {
   text-align: center;
 }
 
+.social-media-feeds #social-media-feeds-container {
+  display: flex;
+}
+
 .social-media-feeds #instagram-feed,
 .social-media-feeds #facebook-feed,
 .social-media-feeds #twitter-feed {
   background-color: #dadada;
-  margin: 0.5em
+  padding: .5em;
 }
 
 /*-----------------------------*/
 /*  Sponsors Section  */
 /*-----------------------------*/
 
-.sponsors H1 {
+.sponsors {
   text-align: center;
+}
+
+.icons {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.icons > div {
+ padding: 15%;
+ width: 34%;
+}
+
+.sponsors a {
+  text-decoration: none;
+  color: #46C2C6;
 }
 
 /*----------------*/
 /*  FAQs Section  */
 /*----------------*/
+
+.faqs H1 {
+  margin-bottom: 0;
+}
+
+.faqs > div {
+  height: 100%;
+}
 
 .faqs > div > p {
   background-color: #dadada;
@@ -114,6 +156,10 @@ nav {
 .faqs > div > div > p {
   background-color: #dadada;
   min-height: 5em;
+}
+
+.faqs > div > div > p:first-child {
+  /*margin-right: .05em;*/
 }
 
 /*------------------*/
@@ -127,6 +173,17 @@ nav {
   align-items: center;
   position: absolute;
   width: 100%;
+  padding-top: 1em;
+}
+
+#footer ul {
+  text-transform: uppercase;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #4F4F84;
+  padding: 0;
 }
 
 #footer ul li {
@@ -138,10 +195,12 @@ nav {
 /*  Anchor Styling  */
 /*------------------*/
 
-#top {
+/*#top {
   background-image: url(https://cdn0.iconfinder.com/data/icons/glyphpack/26/double-arrow-up-128.png);
-  display: block;
-}
+  height: 1em;
+  width: 1em;
+  position: fixed;
+}*/
 
 /*------------------------------*/
 /*  Social Media Icons Styling  */
@@ -150,11 +209,15 @@ nav {
 #social-media-icons {
   margin-top: 1em;
   position: fixed;
-  padding-left: 1em;
+  text-transform: uppercase;
 }
 
 #social-media-icons li {
   list-style-type: none;
+}
+
+#social-media-icons a {
+  padding: .5em 1.3em;
 }
 
 /*-----------------*/
