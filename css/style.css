@@ -80,8 +80,9 @@ nav {
 }
 
 /*-----------------------------*/
-/*  Social Media Feeds Section  */
+/*  Social Media Feeds Section */
 /*-----------------------------*/
+
 .social-media-feeds H1 {
   text-align: center;
 }
@@ -96,8 +97,64 @@ nav {
 /*-----------------------------*/
 /*  Sponsors Section  */
 /*-----------------------------*/
+
 .sponsors H1 {
   text-align: center;
+}
+
+/*----------------*/
+/*  FAQs Section  */
+/*----------------*/
+
+.faqs > div > p {
+  background-color: #dadada;
+  min-height: 5em;
+}
+
+.faqs > div > div > p {
+  background-color: #dadada;
+  min-height: 5em;
+}
+
+/*------------------*/
+/*  Footer Styling  */
+/*------------------*/
+
+#footer {
+  background-color: #dadada;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+#footer ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*------------------*/
+/*  Anchor Styling  */
+/*------------------*/
+
+#top {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/glyphpack/26/double-arrow-up-128.png);
+  display: block;
+}
+
+/*------------------------------*/
+/*  Social Media Icons Styling  */
+/*------------------------------*/
+
+#social-media-icons {
+  margin-top: 1em;
+  position: fixed;
+  padding-left: 1em;
+}
+
+#social-media-icons li {
+  list-style-type: none;
 }
 
 /*-----------------*/
