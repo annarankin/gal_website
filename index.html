@@ -13,24 +13,25 @@
     <a class="logo" href="#"></a>
     <ul class="pure-menu-list" id="header-nav">
       <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Link</a>
+        <a href="#" class="pure-menu-link">About</a>
       </li>
       <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Link</a>
+        <a href="#meetups" class="pure-menu-link">Events</a>
       </li>
       <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Link</a>
+        <a href="#social-media-feeds" class="pure-menu-link">Feeds</a>
       </li>
       <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Link</a>
+        <a href="#sponsors" class="pure-menu-link">Sponsors</a>
       </li>
       <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Link</a>
+        <a href="#faqs" class="pure-menu-link">FAQs</a>
       </li>
     </ul>
   </nav>
   <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-1-12 padded">
+
+    <div class="pure-u-1">
       <ul class="pure-menu-list" id="social-media-icons">
         <li class="pure-menu-item">
           <a href="#" class="pure-menu-link">Icon</a>
@@ -46,8 +47,9 @@
         </li>
       </ul>
     </div>
-    <div class="pure-u-1 pure-u-md-11-12 padded">
-      <section class="about-us pure-g">
+
+    <div class="pure-u-1">
+      <section class="about-us pure-g" id="about-us">
 
         <div class="pure-u-1 padded">
           <h1>The General Assembly WDI Ladies</h1>
@@ -67,7 +69,7 @@
       </section>
     </div>
     <div class="pure-u-1">
-      <section class="meetups pure-g">
+      <section class="meetups pure-g" id="meetups">
 
         <div class="pure-u-1 pure-u-md-2-5 padded">
           <div class="upcoming-events">
@@ -95,44 +97,48 @@
           <h1>Our first Meetup was a huge success!</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi tempore ad voluptatibus corporis perferendis voluptatem, culpa, cum mollitia dolor voluptatum autem consectetur incidunt expedita neque, optio qui ipsum porro?</p>
           <div class="photos">
-            <div class="placeholder-image"></div>
-            <div class="placeholder-image"></div>
-            <div class="placeholder-image"></div>
+            <div class="placeholder-img"></div>
+            <div class="placeholder-img"></div>
+            <div class="placeholder-img"></div>
           </div>
         </div>
 
       </section>
     </div>
     <div class="pure-u-1">
-      <section class="social-media-feeds pure-g">
+      <section class="social-media-feeds pure-g" id="social-media-feeds">
 
         <div class="pure-u-1 padded">
           <h1>What the GALs Are Saying</h1>
         </div>
-        <!-- Instagram feed -->
-        <div class="pure-u-1 pure-u-md-1-5 padded" id="instagram-feed">
-
-        </div>
-        <!-- Facebook feed -->
-        <div class="pure-u-1 pure-u-md-2-5 padded" id="facebook-feed">
-
-        </div>
-        <!-- Twitter feed -->
-        <div class="pure-u-1 pure-u-md-2-5 padded" id="twitter-feed">
-
+        <div class="pure-g" id="social-media-feeds-container">
+          <!-- Instagram feed -->
+          <div class="pure-u-1 pure-u-md-1-5 padded" id="instagram-feed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <!-- Facebook feed -->
+          <div class="pure-u-1 pure-u-md-2-5 padded" id="facebook-feed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <!-- Twitter feed -->
+          <div class="pure-u-1 pure-u-md-2-5 padded" id="twitter-feed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
         </div>
 
       </section>
     </div>
     <div class="pure-u-1">
-      <section class="sponsors pure-g">
+      <section class="sponsors pure-g" id="sponsors">
 
         <div class="pure-u-1 padded">
           <h1>Interested in Sponsoring the GALs?</h1>
+        </div>
+        <div class="pure-u-1 padded">
           <div class="icons">
-            <div class="placeholder-image"></div>
-            <div class="placeholder-image"></div>
-            <div class="placeholder-image"></div>
+            <div class="placeholder-icon"></div>
+            <div class="placeholder-icon"></div>
+            <div class="placeholder-icon"></div>
           </div>
           <p>
             If you'd like to support our mission of connecting and empowering future female tech stars, please contact
@@ -143,9 +149,11 @@
       </section>
     </div>
     <div class="pure-u-1">
-      <section class="faqs pure-g">
+      <section class="faqs pure-g" id="faqs">
 
-        <h1>FAQs</h1>
+        <div class="pure-u-1 padded">
+          <h1>FAQs</h1>
+        </div>
         <div class="pure-u-1 pure-u-md-2-5 padded" id="faqs-left">
           <p class="pure-u-1 padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="pure-u-1 padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -153,7 +161,7 @@
 
         <div class="pure-u-1 pure-u-md-3-5 padded" id="faqs-right">
           <!-- top-right containers -->
-          <div class="pure-g">
+          <div class="pure-g" id="faqs-top-right">
             <p class="pure-u-1 pure-u-md-1-2 padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p class="pure-u-1 pure-u-md-1-2 padded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
@@ -167,27 +175,33 @@
     </div>
 
   </div>
+  <!-- anchor tag -->
+  <!-- <div class="">
+    <a href="#top" target="_top" id="top">kbqefbqiweg</a>
+  </div> -->
+  <!-- footer -->
   <div class="pure-menu pure-menu-horizontal padded" id="footer">
     <div class="copyright-notice">
       Copyright © 2016 The General Assembly WDI Ladies
     </div>
-    <ul class="pure-menu-list" id="footer-social-media">
-      CONTACT US:
-      <a href="#">generalassemblyladies@gmail.com.</a><br>
-      FIND US:
-      <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Icon</a>
-      </li>
-      <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Icon</a>
-      </li>
-      <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Icon</a>
-      </li>
-      <li class="pure-menu-item">
-        <a href="#" class="pure-menu-link">Icon</a>
-      </li>
-    </ul>
+    <div class="footer-links">
+      <ul class="pure-menu-list" id="footer-social-media">
+        <a href="mailto:generalassemblyladies@gmail.com" target="_blank" id="contact-link">Contact</a>
+         or Find Us On
+        <li class="pure-menu-item">
+          <a href="#" class="pure-menu-link">Icon</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#" class="pure-menu-link">Icon</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#" class="pure-menu-link">Icon</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#" class="pure-menu-link">Icon</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
