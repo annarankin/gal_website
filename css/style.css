@@ -8,6 +8,13 @@
 section {
   padding: 1em 10%;
 }
+a {
+  color: #3B94D9;
+  text-decoration: none;
+}
+a:hover {
+  color: #4BA4E9;
+}
 
 .placeholder-img {
   background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
@@ -27,6 +34,12 @@ p.spotlighted {
 
 .padded {
   padding: 0.5em;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
 /*-------------------*/
@@ -62,26 +75,17 @@ nav {
 /*------------------*/
 
 .upcoming-events {
-  background-color: #dadada;
-  padding: 1em;
+  background-color: #000;
+  padding: 0.5em 0;
+  margin: 0.25em;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5)
 }
-.upcoming-events .event {
-  text-align: center;
-  border: 1px solid black;
-  margin: 0.5em 0;
-  color: #FFF;
-}
-.upcoming-events .event .header {
-  background-color: #555;
-  padding: 1em 0.25em;
-}
-.upcoming-events .event h1 {
-  font-size: 1em;
-  margin: 0;
-}
-.upcoming-events .event .rsvp button {
-  background-color: #FF4136;
-  border: none;
+
+.upcoming-events #meetup-feed {
+  width: 227px;
+  height: 436px;
+  margin: 0 auto;
 }
 
 .photos {
@@ -98,19 +102,23 @@ nav {
 /*  Social Media Feeds Section */
 /*-----------------------------*/
 
-.social-media-feeds H1 {
+.social-media-feeds h1 {
   text-align: center;
 }
 
-.social-media-feeds #social-media-feeds-container {
-  display: flex;
+.social-media-feeds .card {
+  padding: 1em;
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .social-media-feeds #instagram-feed,
-.social-media-feeds #facebook-feed,
-.social-media-feeds #twitter-feed {
-  background-color: #dadada;
-  padding: .5em;
+.social-media-feeds #facebook-feed {
+  padding: .25em;
+}
+
+.social-media-feeds #facebook-feed {
+  text-align: center;
 }
 
 /*-----------------------------*/
