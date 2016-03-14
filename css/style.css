@@ -8,6 +8,13 @@
 section {
   padding: 1em 10%;
 }
+a {
+  color: #3B94D9;
+  text-decoration: none;
+}
+a:hover {
+  color: #4BA4E9;
+}
 
 .placeholder-img {
   background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
@@ -27,6 +34,12 @@ p.spotlighted {
 
 .padded {
   padding: 0.5em;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
 /*-------------------*/
@@ -93,15 +106,19 @@ nav {
   text-align: center;
 }
 
-.social-media-feeds #social-media-feeds-container {
-  /*display: flex;*/
+.social-media-feeds .card {
+  padding: 1em;
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .social-media-feeds #instagram-feed,
-.social-media-feeds #facebook-feed,
-.social-media-feeds #twitter-feed {
-  background-color: #dadada;
-  padding: .5em;
+.social-media-feeds #facebook-feed {
+  padding: .25em;
+}
+
+.social-media-feeds #facebook-feed {
+  text-align: center;
 }
 
 /*-----------------------------*/
