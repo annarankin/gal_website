@@ -42,23 +42,52 @@ p.spotlighted {
   box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
+
+/*---------------*/
+/*  Meetup Icon  */
+/*---------------*/
+
+.fa.fa-2x.fa-meetup {
+  height: 1em;
+  width: 0.85em;
+  background-color: #777;
+  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(/img/meetup-logo.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.fa.fa-2x.fa-meetup:hover {
+  background-color: #4BA4E9;
+}
+
 /*-------------------*/
 /*    Nav Styling    */
 /*-------------------*/
 
 nav {
-  background-color: #ededed;
-}
-nav .logo {
-    display: inline-block;
-    padding: 2em 3em;
-    background-color: #dadada;
-}
-nav {
+  background-color: #848484;
+  padding: 0.25em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+}
+
+nav .logo {
+    display: inline-block;
+    padding: 2em 3em;
+    background-image: url(/img/gal_logo_sml.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav a.pure-menu-link {
+  color: #323238;
 }
 
 /*--------------------*/
