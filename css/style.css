@@ -17,8 +17,12 @@ html, button, input, select, textarea,
 }
 
 section {
-  padding: 1em 10%;
+  padding: 3em;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFF;
 }
+
 a {
   color: #3B94D9;
   text-decoration: none;
@@ -45,6 +49,9 @@ p {
 
 p.spotlighted {
   font-size: 1.25em;
+  color: #FFDF00;
+  background-color: rgba(0,0,0,0.75);
+  padding: 1em;
 }
 
 .padded {
@@ -55,14 +62,31 @@ p.spotlighted {
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  padding: 0;
 }
-
+.card .title, .card .content {
+  margin: 0;
+  padding: 1em;
+}
+.card .title {
+  background-color: #FFDF00;
+  font-weight: 600;
+}
+.card p {
+  margin: 0.25em 0;
+}
 /* Header Styling */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   margin: 0.35em 0 1em;
   font-family: 'Open Sans';
+  color: #238CC1;
+}
+
+.code-patterned {
+  background-image: url(../img/code-repeat.jpg);
+  background-size: 300px;
 }
 
 /*---------------*/
@@ -135,7 +159,6 @@ nav a.pure-menu-link {
 
 .upcoming-events #meetup-feed {
   width: 227px;
-  height: 436px;
   margin: 0 auto;
 }
 
@@ -157,18 +180,12 @@ nav a.pure-menu-link {
   text-align: center;
 }
 
-.social-media-feeds .card {
-  padding: 1em;
-  max-height: 350px;
+.social-media-feeds .card .content {
+  height: 350px;
   overflow-y: scroll;
 }
 
-.social-media-feeds #instagram-feed,
-.social-media-feeds #facebook-feed {
-  padding: .25em;
-}
-
-.social-media-feeds #facebook-feed {
+.social-media-feeds #facebook-feed .content {
   text-align: center;
 }
 
@@ -257,6 +274,9 @@ nav a.pure-menu-link {
 /*------------------*/
 
 #anchor {
+  position: fixed;
+  bottom: 2.5em;
+  right: 1em;
   text-align: right;
   margin: 0 1em .5em 0;
 }
@@ -300,6 +320,10 @@ nav a.pure-menu-link {
   .icons {
     font-size: 25px;
   }
+  .social-media-feeds #instagram-feed,
+  .social-media-feeds #facebook-feed {
+/*     padding: .5em; */
+  }
 }
 /* Large screens & up */
 @media screen and (min-width: 64em) {
@@ -309,6 +333,4 @@ nav a.pure-menu-link {
 /* x-Large screens & up */
 @media screen and (min-width: 80em) {
 
-}
-p {
 }
