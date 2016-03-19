@@ -1,3 +1,14 @@
+/*---------------------------------------------------*/
+/* Setting up our font-stack to work with pure grids */
+/*---------------------------------------------------*/
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: Raleway;
+}
+
+
 /*-----------------------------*/
 /* Utility & universal styling */
 /*-----------------------------*/
@@ -28,6 +39,10 @@ a:hover {
   background-position: center;
 }
 
+p {
+ margin: 1.75em 0;
+}
+
 p.spotlighted {
   font-size: 1.25em;
 }
@@ -42,6 +57,13 @@ p.spotlighted {
   box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
+/* Header Styling */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin: 0.35em 0 1em;
+  font-family: 'Open Sans';
+}
 
 /*---------------*/
 /*  Meetup Icon  */
@@ -78,12 +100,12 @@ nav {
 }
 
 nav .logo {
-    display: inline-block;
-    padding: 2em 3em;
-    background-image: url(/img/gal_logo_sml.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2em 3em;
+  background-image: url(/img/gal_logo_sml.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 nav a.pure-menu-link {
@@ -159,13 +181,15 @@ nav a.pure-menu-link {
 }
 
 .icons {
-  display: flex;
+  font-size: 15px;
+  color: #ff2e6e;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.icons > div {
- padding: 15%;
- width: 34%;
+.icons > i {
+ padding: 0.25em 0;
+ width: 30%;
 }
 
 .sponsors a {
@@ -266,7 +290,6 @@ nav a.pure-menu-link {
 
 /* Small screens & up */
 @media screen and (min-width: 35.5em) {
-
 }
 /* Medium screens & up */
 @media screen and (min-width: 48em) {
@@ -274,12 +297,18 @@ nav a.pure-menu-link {
     padding: 45% 50%;
     width 100%;
   }
+  .icons {
+    font-size: 25px;
+  }
 }
 /* Large screens & up */
 @media screen and (min-width: 64em) {
-
-}
+  .icons {
+    font-size: 35px;
+  }
 /* x-Large screens & up */
 @media screen and (min-width: 80em) {
 
+}
+p {
 }
