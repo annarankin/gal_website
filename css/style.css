@@ -203,12 +203,15 @@ nav {
 /*  Anchor Styling  */
 /*------------------*/
 
-/*#top {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/glyphpack/26/double-arrow-up-128.png);
-  height: 1em;
-  width: 1em;
-  position: fixed;
-}*/
+#anchor {
+  text-align: right;
+  margin: 0 1em .5em 0;
+}
+
+#anchor > a > img {
+  height: 1.5em;
+  width: 2em;
+}
 
 /*------------------------------*/
 /*  Social Media Icons Styling  */
