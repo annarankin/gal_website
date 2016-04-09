@@ -16,6 +16,21 @@ a:hover {
   color: #4BA4E9;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .placeholder-img {
   background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
   background-size: cover;
@@ -29,7 +44,10 @@ a:hover {
 }
 
 p.spotlighted {
-  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 .padded {
@@ -40,6 +58,10 @@ p.spotlighted {
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+}
+
+.pure-u-1 {
+  padding-top: 50px;
 }
 
 
@@ -69,30 +91,47 @@ p.spotlighted {
 /*-------------------*/
 
 nav {
-  background-color: #848484;
+  background-color: rgba(70,192,196,0.5);
   padding: 0.25em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   text-transform: uppercase;
+  position: fixed;
+  height: 70px;
 }
 
 nav .logo {
-    display: inline-block;
-    padding: 2em 3em;
-    background-image: url(/img/gal_logo_sml.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding: 2em 3em;
+  background-image: url(/img/gal_logo_sml.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
 }
 
 nav a.pure-menu-link {
   color: #323238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+nav a.pure-menu-link:hover {
+  color: #46C0C4;
 }
 
 /*--------------------*/
 /*  About Us Section  */
 /*--------------------*/
+
+.about-us .logo {
+  background-image: url(/img/gal_logo_med.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 400px;
+}
 
 #team-photo {
   padding: 25% 50%;
