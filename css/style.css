@@ -1,3 +1,14 @@
+/*---------------------------------------------------*/
+/* Setting up our font-stack to work with pure grids */
+/*---------------------------------------------------*/
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: Raleway;
+}
+
+
 /*-----------------------------*/
 /* Utility & universal styling */
 /*-----------------------------*/
@@ -6,8 +17,12 @@
 }
 
 section {
-  padding: 1em 10%;
+  padding: 3em;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFF;
 }
+
 a {
   color: #3B94D9;
   text-decoration: none;
@@ -43,11 +58,18 @@ h1, h3, h4, h5, h6 {
   background-position: center;
 }
 
+p {
+ margin: 1.75em 0;
+}
+
 p.spotlighted {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75em;
   font-weight: 400;
   line-height: 1.5em;
+  font-size: 1.25em;
+  color: #FFDF00;
+  background-color: rgba(0,0,0,0.75);
+  padding: 1em;
 }
 
 .padded {
@@ -58,6 +80,52 @@ p.spotlighted {
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  padding: 0;
+}
+.card .title, .card .content {
+  margin: 0;
+  padding: 1em;
+}
+.card .title {
+  background-color: #FFDF00;
+  font-weight: 600;
+}
+.card p {
+  margin: 0.25em 0;
+}
+/* Header Styling */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin: 0.35em 0 1em;
+  font-family: 'Open Sans';
+  color: #238CC1;
+}
+
+.code-patterned {
+  background-image: url(../img/code-repeat.jpg);
+  background-size: 300px;
+}
+
+/*---------------*/
+/*  Meetup Icon  */
+/*---------------*/
+
+.fa.fa-2x.fa-meetup {
+  height: 1em;
+  width: 0.85em;
+  background-color: #777;
+  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(/img/meetup-logo.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.fa.fa-2x.fa-meetup:hover {
+  background-color: #4BA4E9;
 }
 
 .pure-u-1 {
@@ -102,12 +170,19 @@ nav {
 }
 
 nav .logo {
+<<<<<<< HEAD
+=======
+  display: inline-block;
+>>>>>>> master
   padding: 2em 3em;
   background-image: url(/img/gal_logo_sml.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   display: none;
+=======
+>>>>>>> master
 }
 
 nav a.pure-menu-link {
@@ -152,7 +227,6 @@ nav a.pure-menu-link:hover {
 
 .upcoming-events #meetup-feed {
   width: 227px;
-  height: 436px;
   margin: 0 auto;
 }
 
@@ -174,18 +248,12 @@ nav a.pure-menu-link:hover {
   text-align: center;
 }
 
-.social-media-feeds .card {
-  padding: 1em;
-  max-height: 350px;
+.social-media-feeds .card .content {
+  height: 350px;
   overflow-y: scroll;
 }
 
-.social-media-feeds #instagram-feed,
-.social-media-feeds #facebook-feed {
-  padding: .25em;
-}
-
-.social-media-feeds #facebook-feed {
+.social-media-feeds #facebook-feed .content {
   text-align: center;
 }
 
@@ -198,13 +266,15 @@ nav a.pure-menu-link:hover {
 }
 
 .icons {
-  display: flex;
+  font-size: 15px;
+  color: #ff2e6e;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.icons > div {
- padding: 15%;
- width: 34%;
+.icons > i {
+ padding: 0.25em 0;
+ width: 30%;
 }
 
 .sponsors a {
@@ -272,6 +342,9 @@ nav a.pure-menu-link:hover {
 /*------------------*/
 
 #anchor {
+  position: fixed;
+  bottom: 2.5em;
+  right: 1em;
   text-align: right;
   margin: 0 1em .5em 0;
 }
@@ -305,7 +378,6 @@ nav a.pure-menu-link:hover {
 
 /* Small screens & up */
 @media screen and (min-width: 35.5em) {
-
 }
 /* Medium screens & up */
 @media screen and (min-width: 48em) {
@@ -313,11 +385,19 @@ nav a.pure-menu-link:hover {
     padding: 45% 50%;
     width 100%;
   }
+  .icons {
+    font-size: 25px;
+  }
+  .social-media-feeds #instagram-feed,
+  .social-media-feeds #facebook-feed {
+/*     padding: .5em; */
+  }
 }
 /* Large screens & up */
 @media screen and (min-width: 64em) {
-
-}
+  .icons {
+    font-size: 35px;
+  }
 /* x-Large screens & up */
 @media screen and (min-width: 80em) {
 
