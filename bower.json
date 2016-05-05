@@ -18,7 +18,8 @@
   "dependencies": {
     "webcomponentsjs": "^0.7.21",
     "pure": "^0.6.0",
-    "components-font-awesome": "^4.5.0"
+    "components-font-awesome": "^4.5.0",
+    "font-awesome": "fontawesome#^4.6.2"
   },
   "resolutions": {
     "webcomponentsjs": "0.7.21"
