@@ -12,12 +12,16 @@ html, button, input, select, textarea,
 /*-----------------------------*/
 /* Utility & universal styling */
 /*-----------------------------*/
+body {
+  font-size: 1.2em;
+}
+
 * {
   box-sizing: border-box;
 }
 
 section {
-  padding: 3em;
+  padding: 1.2em 3em;
   width: 90%;
   margin: 0 auto;
   background-color: #FFF;
@@ -47,11 +51,12 @@ p {
  margin: 1.75em 0;
 }
 
-p.spotlighted {
-  font-size: 1.25em;
+div.spotlighted {
+  font-size: 1.2em;
   color: #FFDF00;
   background-color: rgba(0,0,0,0.75);
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .padded {
@@ -79,9 +84,17 @@ p.spotlighted {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  margin: 0.35em 0 1em;
   font-family: 'Open Sans';
   color: #238CC1;
+}
+
+.h1 > h1 {
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+#h1 > h1 {
+  margin-bottom: 0;
 }
 
 .code-patterned {
@@ -110,15 +123,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #4BA4E9;
 }
 
-
-/*---------------*/
-/*  Meetup Icon  */
-/*---------------*/
-
-.fa.fa-2x.fa-meetup {
-  height: 1em;
-  width: 0.85em;
-  background-color: #777;
+.fa.fa-lg.fa-meetup {
+  height: .8em;
+  width: 1.5em;
+  background-color: #000000;
   -webkit-mask-image: url(/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
@@ -127,9 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
-}
-.fa.fa-2x.fa-meetup:hover {
-  background-color: #4BA4E9;
 }
 
 /*-------------------*/
@@ -189,18 +194,18 @@ nav a.pure-menu-link {
 }
 
 .photos > div {
- padding: 15%;
- width: 34%;
- border: 1px solid;
+ width: 33%;
+}
+
+.photos > div > img {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid;
 }
 
 /*-----------------------------*/
 /*  Social Media Feeds Section */
 /*-----------------------------*/
-
-.social-media-feeds h1 {
-  text-align: center;
-}
 
 .social-media-feeds .card .content {
   height: 350px;
@@ -214,10 +219,6 @@ nav a.pure-menu-link {
 /*-----------------------------*/
 /*  Sponsors Section  */
 /*-----------------------------*/
-
-.sponsors {
-  text-align: center;
-}
 
 .icons {
   font-size: 15px;
@@ -240,26 +241,14 @@ nav a.pure-menu-link {
 /*  FAQs Section  */
 /*----------------*/
 
-.faqs H1 {
-  margin-bottom: 0;
+#faqs-left {
+  padding-right: .5em;
 }
 
-.faqs > div {
-  height: 100%;
-}
-
-.faqs > div > p {
+.faq-card {
   background-color: #dadada;
-  min-height: 5em;
-}
-
-.faqs > div > div > p {
-  background-color: #dadada;
-  min-height: 5em;
-}
-
-.faqs > div > div > p:first-child {
-  /*margin-right: .05em;*/
+  padding: 1em;
+  margin: 0 0 .5em 0;
 }
 
 /*------------------*/
@@ -276,13 +265,9 @@ nav a.pure-menu-link {
   padding-top: 1em;
 }
 
-#footer ul {
-  text-transform: uppercase;
-}
-
 #footer a {
   text-decoration: none;
-  color: #4F4F84;
+  color: #000000;
   padding: 0;
 }
 
@@ -300,12 +285,11 @@ nav a.pure-menu-link {
   bottom: 2.5em;
   right: 1em;
   text-align: right;
-  margin: 0 1em .5em 0;
+  margin: 0 1em .7em 0;
 }
 
-#anchor > a > img {
-  height: 1.5em;
-  width: 2em;
+i.fa.fa-2x.fa-arrow-up {
+  color: #777;
 }
 
 /*------------------------------*/
