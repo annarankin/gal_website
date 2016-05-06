@@ -5,7 +5,7 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
   /* Set your content font stack here: */
-  font-family: Raleway;
+  font-family: 'Roboto';
 }
 
 
@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  padding: 1.2em 3em;
+  padding: 2em 3em;
   width: 90%;
   margin: 0 auto;
   background-color: #FFF;
@@ -51,11 +51,22 @@ p {
  margin: 1.75em 0;
 }
 
+.about-us .logo {
+  background-image: url(/img/gal_logo_med.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+  height: 300px;
+  width: 400px;
+}
+
 div.spotlighted {
-  font-size: 1.2em;
-  color: #FFDF00;
-  background-color: rgba(0,0,0,0.75);
+  font-size: 1.5em;
+  color: #46C0C4;
+  background-color: rgba(0,0,0,0.05);
   padding: 1em;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -84,22 +95,28 @@ div.spotlighted {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  font-family: 'Open Sans';
-  color: #238CC1;
+  font-family: 'Roboto';
+  color: #F44556;
+}
+
+h2 {
+  margin: 0;
 }
 
 .h1 > h1 {
   margin-bottom: .5em;
-  text-align: center;
-}
-
-#h1 > h1 {
-  margin-bottom: 0;
+  text-align: left;
 }
 
 .code-patterned {
   background-image: url(../img/code-repeat.jpg);
   background-size: 300px;
+}
+
+.section-title {
+  color: black;
+  padding: 10px 10px 10px 20px;
+  border-left: 9px solid #FFDF00;
 }
 
 /*---------------*/
@@ -142,16 +159,18 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------*/
 
 nav {
-  background-color: #848484;
+  background-color: rgba(70,192,196,0.5);
   padding: 0.25em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   text-transform: uppercase;
+  position: fixed;
+  height: 100px;
 }
 
 nav .logo {
-  display: inline-block;
+  display: none;
   padding: 2em 3em;
   background-image: url(/img/gal_logo_sml.png);
   background-size: contain;
@@ -161,6 +180,12 @@ nav .logo {
 
 nav a.pure-menu-link {
   color: #323238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+nav a.pure-menu-link:hover {
+  color: #46C0C4;
 }
 
 /*--------------------*/
@@ -220,6 +245,10 @@ nav a.pure-menu-link {
 /*  Sponsors Section  */
 /*-----------------------------*/
 
+.sponsorship-text {
+  color: black;
+}
+
 .icons {
   font-size: 15px;
   color: #ff2e6e;
@@ -246,7 +275,6 @@ nav a.pure-menu-link {
 }
 
 .faq-card {
-  background-color: #dadada;
   padding: 1em;
   margin: 0 0 .5em 0;
 }
@@ -256,7 +284,7 @@ nav a.pure-menu-link {
 /*------------------*/
 
 #footer {
-  background-color: #dadada;
+  background-color: rgba(0,0,0,0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -274,6 +302,10 @@ nav a.pure-menu-link {
 #footer ul li {
   display: inline-block;
   list-style-type: none;
+}
+
+.pure-menu-item {
+  margin: 0 10px;
 }
 
 /*------------------*/
@@ -297,7 +329,7 @@ i.fa.fa-2x.fa-arrow-up {
 /*------------------------------*/
 
 #social-media-icons {
-  margin-top: 1em;
+  margin-top: 5em;
   position: fixed;
   text-transform: uppercase;
 }
