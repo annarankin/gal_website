@@ -421,7 +421,7 @@ i.fa.fa-2x.fa-arrow-up {
     font-size: 1.5em;
   }
   .upcoming-events {
-    margin: 1.75em 0.25em;
+    margin: 0 0.25em 1.75em 0.25em;
   }
 }
 
