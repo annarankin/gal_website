@@ -388,12 +388,13 @@ i.fa.fa-2x.fa-arrow-up {
 
 @media screen and (max-width: 40em) {
   .navbar {
-    background-color: #46C0C4;
+    background-color: white;
   }
   #header-nav {
     margin: 0 auto;
   }
-  .pure-menu-item a {
+  nav .pure-menu-item a {
+    color: #46C0C4;
     font-size: 0.75em;
   }
   nav .logo {
