@@ -167,6 +167,7 @@ nav {
   text-transform: uppercase;
   position: fixed;
   height: 100px;
+  z-index: 10;
 }
 
 nav .logo {
@@ -350,30 +351,38 @@ i.fa.fa-2x.fa-arrow-up {
 /*  Media Queries  */
 /*-----------------*/
 
-/* Small screens & up */
-@media screen and (min-width: 35.5em) {
+@media screen and (max-width: 35.5em) {
+  .pure-menu-item a {
+    font-size: 0.75em;
+  }
+  nav .logo {
+    padding: 0;
+  }
+  .spotlighted {
+    font-size: 1em;
+  }
+  .photos {
+    display: none;
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
 }
 
-/* Medium screens & up */
 @media screen and (min-width: 48em) {
   #team-photo {
     padding: 45% 50%;
-    width 100%;
   }
   .icons {
     font-size: 25px;
   }
-  .social-media-feeds #instagram-feed,
-  .social-media-feeds #facebook-feed {
-/*     padding: .5em; */
-  }
 }
-/* Large screens & up */
+
 @media screen and (min-width: 64em) {
   .icons {
     font-size: 35px;
   }
-/* x-Large screens & up */
+
 @media screen and (min-width: 80em) {
 
 }
