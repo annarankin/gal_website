@@ -310,6 +310,28 @@ nav a.pure-menu-link:hover {
   color: #46C2C6;
 }
 
+/*-------------------*/
+/*   Fixed Bg Img    */
+/*-------------------*/
+
+#fixed-bg-img-1 {
+  background-image: url(/img/wocintech_1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#fixed-bg-img-2 {
+  background-image: url(/img/wocintech_2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 /*----------------*/
 /*  FAQs Section  */
 /*----------------*/
@@ -330,11 +352,17 @@ nav a.pure-menu-link:hover {
 #footer {
   background-color: rgba(0,0,0,0.05);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  padding-top: 1em;
+  text-align:center;
+  padding: 1em 0;
+}
+
+.copyright-notice {
+  padding-bottom: 0.75em;
+}
+
+#footer-social-media {
+  /*padding-bottom: 0.75em;*/
 }
 
 #footer a {
@@ -362,7 +390,7 @@ nav a.pure-menu-link:hover {
 
 #anchor {
   position: fixed;
-  bottom: 2.5em;
+  bottom: 5em;
   right: 1em;
   text-align: right;
   margin: 0 1em .7em 0;
@@ -423,6 +451,9 @@ i.fa.fa-2x.fa-arrow-up {
   .upcoming-events {
     margin: 0 0.25em 1.75em 0.25em;
   }
+  .fixed-bg-img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 48em) {
@@ -435,13 +466,21 @@ i.fa.fa-2x.fa-arrow-up {
   .sponsorship-text {
     text-align: center;
   }
-
+  .copyright-notice {
+    text-align: left;
+    padding-bottom: 0;
+    padding-left: 1em;
+  }
+  .footer-links {
+    text-align: right;
+    padding-right: 1em;
+  }
 }
 
 @media (min-width: 48em) and (max-width: 64em) {
-   .about-us .spotlighted {
-      font-size: 1.25em;
-   }
+  .about-us .spotlighted {
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (min-width: 64em) {
