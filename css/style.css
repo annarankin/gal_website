@@ -52,7 +52,7 @@ p {
 }
 
 .about-us .logo {
-  background-image: url(/img/gal_logo_med.png);
+  background-image: url(/img/gal_logo_lg.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -308,6 +308,10 @@ nav a.pure-menu-link:hover {
   margin: 0 10px;
 }
 
+.copyright-notice {
+  font-size: 0.8em;
+}
+
 /*------------------*/
 /*  Anchor Styling  */
 /*------------------*/
@@ -329,7 +333,7 @@ i.fa.fa-2x.fa-arrow-up {
 /*------------------------------*/
 
 #social-media-icons {
-  margin-top: 5em;
+  margin-top: 7em;
   position: fixed;
   text-transform: uppercase;
 }
@@ -349,6 +353,7 @@ i.fa.fa-2x.fa-arrow-up {
 /* Small screens & up */
 @media screen and (min-width: 35.5em) {
 }
+
 /* Medium screens & up */
 @media screen and (min-width: 48em) {
   #team-photo {
