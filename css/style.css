@@ -57,7 +57,7 @@ div.spotlighted {
   background-color: rgba(0,0,0,0.05);
   padding: 1em;
   line-height: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.75em;
 }
 
 .padded {
@@ -273,7 +273,15 @@ nav a.pure-menu-link:hover {
   overflow-y: scroll;
 }
 
+#facebook-feed {
+  min-width: 350px;
+}
+
 .social-media-feeds #facebook-feed .content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
@@ -387,6 +395,9 @@ i.fa.fa-2x.fa-arrow-up {
 /*-----------------*/
 
 @media screen and (max-width: 40em) {
+  h2 {
+    font-size: 1.25em;
+  }
   .navbar {
     background-color: white;
   }
@@ -408,6 +419,9 @@ i.fa.fa-2x.fa-arrow-up {
   }
   .section-title {
     font-size: 1.5em;
+  }
+  .upcoming-events {
+    margin: 1.75em 0.25em;
   }
 }
 
@@ -434,6 +448,7 @@ i.fa.fa-2x.fa-arrow-up {
   .icons {
     font-size: 35px;
   }
+}
 
 @media screen and (min-width: 80em) {
   .icons i {
