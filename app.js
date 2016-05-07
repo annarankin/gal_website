@@ -7,7 +7,7 @@ function showNavLogo() {
   if (scrollHeight > 400) {
     $('nav .logo').css('display', 'inline-block');
     $('nav').css('justify-content', 'space-between');
- } else {
+  } else {
     $('nav .logo').css('display', 'none');
     $('nav').css('justify-content', 'flex-end');
   }

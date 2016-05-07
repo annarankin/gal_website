@@ -51,16 +51,6 @@ p {
  margin: 1.75em 0;
 }
 
-.about-us .logo {
-  background-image: url(/img/gal_logo_lg.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 5em;
-  height: 300px;
-  width: 400px;
-}
-
 div.spotlighted {
   font-size: 1.5em;
   color: #46C0C4;
@@ -91,6 +81,7 @@ div.spotlighted {
 .card p {
   margin: 0.25em 0;
 }
+
 /* Header Styling */
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,6 +108,10 @@ h2 {
   color: black;
   padding: 10px 10px 10px 20px;
   border-left: 9px solid #FFDF00;
+}
+
+.active {
+  background-color: white;
 }
 
 /*---------------*/
@@ -186,12 +181,48 @@ nav a.pure-menu-link {
 }
 
 nav a.pure-menu-link:hover {
+  background-color: white;
   color: #46C0C4;
+}
+
+/*--------------------*/
+/*   Header Section   */
+/*--------------------*/
+
+.header {
+  padding-bottom: 0;
+}
+
+.large-logo {
+  background-image: url(/img/gal_logo_lg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+  height: 300px;
+  width: 400px;
+}
+
+.large-logo:hover .attribution {
+  display: block;
+}
+
+.attribution {
+  font-size: 0.7em;
+  display: none;
+  margin: 0;
+  text-align: right;
+  padding-top: 250px;
+  padding-right: 50px;
 }
 
 /*--------------------*/
 /*  About Us Section  */
 /*--------------------*/
+
+.about-us {
+  padding-top: 0;
+}
 
 #team-photo {
   padding: 25% 50%;
@@ -226,12 +257,16 @@ nav a.pure-menu-link:hover {
 .photos > div > img {
   width: 100%;
   height: 100%;
-  border: 1.5px solid;
+  border: 1.5px solid white;
 }
 
 /*-----------------------------*/
 /*  Social Media Feeds Section */
 /*-----------------------------*/
+
+#social-media-feeds-container {
+    margin: 0 auto;
+}
 
 .social-media-feeds .card .content {
   height: 350px;
@@ -358,8 +393,8 @@ i.fa.fa-2x.fa-arrow-up {
   nav .logo {
     padding: 0;
   }
-  .spotlighted {
-    font-size: 1em;
+  .about-us .spotlighted {
+    font-size: 1.15em;
   }
   .photos {
     display: none;
@@ -376,6 +411,16 @@ i.fa.fa-2x.fa-arrow-up {
   .icons {
     font-size: 25px;
   }
+  .sponsorship-text {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+   .about-us .spotlighted {
+      font-size: 1.25em;
+   }
 }
 
 @media screen and (min-width: 64em) {
@@ -384,5 +429,7 @@ i.fa.fa-2x.fa-arrow-up {
   }
 
 @media screen and (min-width: 80em) {
-
+  .icons i {
+    width: 15%;
+  }
 }
