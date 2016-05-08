@@ -233,6 +233,25 @@ nav a.pure-menu-link:hover {
 /*  Meetup Section  */
 /*------------------*/
 
+.meetup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meetup-toggle {
+  background-color: #F44556;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-left: 2px;
+  padding-top: 3px;
+  color: white;
+}
+
 .upcoming-events {
   background-color: #000;
   padding: 0.5em 0;
@@ -428,6 +447,9 @@ i.fa.fa-2x.fa-arrow-up {
   }
   .navbar {
     background-color: white;
+    -webkit-box-shadow: 0 10px 6px -6px #F3F3F3;
+    -moz-box-shadow: 0 10px 6px -6px #F3F3F3;
+    box-shadow: 0 10px 6px -6px #F3F3F3;
   }
   #header-nav {
     margin: 0 auto;

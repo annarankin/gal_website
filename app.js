@@ -12,3 +12,11 @@ function showNavLogo() {
     $('nav').css('justify-content', 'flex-end');
   }
 };
+
+$(function() {
+  $('.meetup-details').hide();
+  $('.meetup-toggle').on('click', function() {
+    $(this).parent().siblings('.meetup-details').toggle();
+  });
+
+});
