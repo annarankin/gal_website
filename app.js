@@ -17,6 +17,7 @@ $(function() {
   $('.meetup-details').hide();
   $('.meetup-toggle').on('click', function() {
     $(this).parent().siblings('.meetup-details').toggle();
+    $(this).toggleClass('rotate');
   });
 
 });

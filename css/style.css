@@ -114,6 +114,10 @@ h2 {
   background-color: white;
 }
 
+.rotate {
+  transform: rotate(45deg);
+}
+
 /*---------------*/
 /*  Meetup Icon  */
 /*---------------*/
@@ -199,8 +203,8 @@ nav a.pure-menu-link:hover {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 5em;
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 500px;
 }
 
 .large-logo:hover .attribution {
@@ -212,7 +216,7 @@ nav a.pure-menu-link:hover {
   display: none;
   margin: 0;
   text-align: right;
-  padding-top: 250px;
+  padding-top: 350px;
   padding-right: 50px;
 }
 
@@ -471,6 +475,9 @@ i.fa.fa-2x.fa-arrow-up {
   }
   nav .logo {
     padding: 0;
+  }
+  .large-logo {
+    margin-top: 2.5em;
   }
   .about-us .spotlighted {
     font-size: 1.15em;
