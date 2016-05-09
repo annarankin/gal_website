@@ -5,7 +5,7 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
   /* Set your content font stack here: */
-  font-family: Raleway;
+  font-family: 'Roboto';
 }
 
 
@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  padding: 1.2em 3em;
+  padding: 2em 3em;
   width: 90%;
   margin: 0 auto;
   background-color: #FFF;
@@ -52,11 +52,12 @@ p {
 }
 
 div.spotlighted {
-  font-size: 1.2em;
-  color: #FFDF00;
-  background-color: rgba(0,0,0,0.75);
+  font-size: 1.5em;
+  color: #46C0C4;
+  background-color: rgba(0,0,0,0.05);
   padding: 1em;
-  margin-bottom: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.75em;
 }
 
 .padded {
@@ -80,26 +81,41 @@ div.spotlighted {
 .card p {
   margin: 0.25em 0;
 }
+
 /* Header Styling */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  font-family: 'Open Sans';
-  color: #238CC1;
+  font-family: 'Roboto';
+  color: #F44556;
+}
+
+h2 {
+  margin: 0;
 }
 
 .h1 > h1 {
   margin-bottom: .5em;
-  text-align: center;
-}
-
-#h1 > h1 {
-  margin-bottom: 0;
+  text-align: left;
 }
 
 .code-patterned {
   background-image: url(../img/code-repeat.jpg);
   background-size: 300px;
+}
+
+.section-title {
+  color: black;
+  padding: 10px 10px 10px 20px;
+  border-left: 9px solid #FFDF00;
+}
+
+.active {
+  background-color: white;
+}
+
+.rotate {
+  transform: rotate(45deg);
 }
 
 /*---------------*/
@@ -142,16 +158,19 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------*/
 
 nav {
-  background-color: #848484;
+  background-color: rgba(70,192,196,0.5);
   padding: 0.25em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   text-transform: uppercase;
+  position: fixed;
+  height: 100px;
+  z-index: 10;
 }
 
 nav .logo {
-  display: inline-block;
+  display: none;
   padding: 2em 3em;
   background-image: url(/img/gal_logo_sml.png);
   background-size: contain;
@@ -161,11 +180,53 @@ nav .logo {
 
 nav a.pure-menu-link {
   color: #323238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+nav a.pure-menu-link:hover {
+  background-color: white;
+  color: #46C0C4;
+}
+
+/*--------------------*/
+/*   Header Section   */
+/*--------------------*/
+
+.header {
+  padding-bottom: 0;
+}
+
+.large-logo {
+  background-image: url(/img/gal_logo_lg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+  height: 400px;
+  width: 500px;
+}
+
+.large-logo:hover .attribution {
+  display: block;
+}
+
+.attribution {
+  font-size: 0.7em;
+  display: none;
+  margin: 0;
+  text-align: right;
+  padding-top: 350px;
+  padding-right: 50px;
 }
 
 /*--------------------*/
 /*  About Us Section  */
 /*--------------------*/
+
+.about-us {
+  padding-top: 0;
+}
 
 #team-photo {
   padding: 25% 50%;
@@ -175,6 +236,36 @@ nav a.pure-menu-link {
 /*------------------*/
 /*  Meetup Section  */
 /*------------------*/
+
+.meetup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  color: #777;
+  font-size: 0.7em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.break-line {
+  margin: 1em 0;
+}
+
+.meetup-toggle {
+  background-color: #F44556;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-left: 2px;
+  padding-top: 3px;
+  color: white;
+}
 
 .upcoming-events {
   background-color: #000;
@@ -200,25 +291,41 @@ nav a.pure-menu-link {
 .photos > div > img {
   width: 100%;
   height: 100%;
-  border: 1.5px solid;
+  border: 1.5px solid white;
 }
 
 /*-----------------------------*/
 /*  Social Media Feeds Section */
 /*-----------------------------*/
 
+#social-media-feeds-container {
+    margin: 0 auto;
+}
+
 .social-media-feeds .card .content {
   height: 350px;
   overflow-y: scroll;
 }
 
+#facebook-feed {
+  min-width: 350px;
+}
+
 .social-media-feeds #facebook-feed .content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
 /*-----------------------------*/
 /*  Sponsors Section  */
 /*-----------------------------*/
+
+.sponsorship-text {
+  color: black;
+}
 
 .icons {
   font-size: 15px;
@@ -237,6 +344,28 @@ nav a.pure-menu-link {
   color: #46C2C6;
 }
 
+/*-------------------*/
+/*   Fixed Bg Img    */
+/*-------------------*/
+
+#fixed-bg-img-1 {
+  background-image: url(/img/wocintech_1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+#fixed-bg-img-2 {
+  background-image: url(/img/wocintech_2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 /*----------------*/
 /*  FAQs Section  */
 /*----------------*/
@@ -246,7 +375,6 @@ nav a.pure-menu-link {
 }
 
 .faq-card {
-  background-color: #dadada;
   padding: 1em;
   margin: 0 0 .5em 0;
 }
@@ -256,13 +384,19 @@ nav a.pure-menu-link {
 /*------------------*/
 
 #footer {
-  background-color: #dadada;
+  background-color: rgba(0,0,0,0.05);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  padding-top: 1em;
+  text-align:center;
+  padding: 1em 0;
+}
+
+.copyright-notice {
+  padding-bottom: 0.75em;
+}
+
+#footer-social-media {
+  /*padding-bottom: 0.75em;*/
 }
 
 #footer a {
@@ -276,13 +410,21 @@ nav a.pure-menu-link {
   list-style-type: none;
 }
 
+.pure-menu-item {
+  margin: 0 10px;
+}
+
+.copyright-notice {
+  font-size: 0.8em;
+}
+
 /*------------------*/
 /*  Anchor Styling  */
 /*------------------*/
 
 #anchor {
   position: fixed;
-  bottom: 2.5em;
+  bottom: 5em;
   right: 1em;
   text-align: right;
   margin: 0 1em .7em 0;
@@ -297,7 +439,7 @@ i.fa.fa-2x.fa-arrow-up {
 /*------------------------------*/
 
 #social-media-icons {
-  margin-top: 1em;
+  margin-top: 7em;
   position: fixed;
   text-transform: uppercase;
 }
@@ -314,29 +456,81 @@ i.fa.fa-2x.fa-arrow-up {
 /*  Media Queries  */
 /*-----------------*/
 
-/* Small screens & up */
-@media screen and (min-width: 35.5em) {
+@media screen and (max-width: 40em) {
+  h2 {
+    font-size: 1.25em;
+  }
+  .navbar {
+    background-color: white;
+    -webkit-box-shadow: 0 10px 6px -6px #F3F3F3;
+    -moz-box-shadow: 0 10px 6px -6px #F3F3F3;
+    box-shadow: 0 10px 6px -6px #F3F3F3;
+  }
+  #header-nav {
+    margin: 0 auto;
+  }
+  nav .pure-menu-item a {
+    color: #46C0C4;
+    font-size: 0.75em;
+  }
+  nav .logo {
+    padding: 0;
+  }
+  .large-logo {
+    margin-top: 2.5em;
+  }
+  .about-us .spotlighted {
+    font-size: 1.15em;
+  }
+  .photos {
+    display: none;
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
+  .upcoming-events {
+    margin: 0 0.25em 1.75em 0.25em;
+  }
+  .fixed-bg-img {
+    display: none;
+  }
 }
-/* Medium screens & up */
+
 @media screen and (min-width: 48em) {
   #team-photo {
     padding: 45% 50%;
-    width 100%;
   }
   .icons {
     font-size: 25px;
   }
-  .social-media-feeds #instagram-feed,
-  .social-media-feeds #facebook-feed {
-/*     padding: .5em; */
+  .sponsorship-text {
+    text-align: center;
+  }
+  .copyright-notice {
+    text-align: left;
+    padding-bottom: 0;
+    padding-left: 1em;
+  }
+  .footer-links {
+    text-align: right;
+    padding-right: 1em;
   }
 }
-/* Large screens & up */
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .about-us .spotlighted {
+    font-size: 1.25em;
+  }
+}
+
 @media screen and (min-width: 64em) {
   .icons {
     font-size: 35px;
   }
-/* x-Large screens & up */
-@media screen and (min-width: 80em) {
+}
 
+@media screen and (min-width: 80em) {
+  .icons i {
+    width: 15%;
+  }
 }
