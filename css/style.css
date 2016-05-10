@@ -100,7 +100,7 @@ h2 {
 }
 
 .code-patterned {
-  background-image: url(../img/code-repeat.jpg);
+  background-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/code-repeat.jpg);
   background-size: 300px;
 }
 
@@ -126,11 +126,11 @@ h2 {
   height: 1em;
   width: 0.85em;
   background-color: #777;
-  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/meetup-logo.svg);
+  mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -143,11 +143,11 @@ h2 {
   height: .8em;
   width: 1.5em;
   background-color: #000000;
-  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/meetup-logo.svg);
+  mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -172,7 +172,7 @@ nav {
 nav .logo {
   display: none;
   padding: 2em 3em;
-  background-image: url(/img/gal_logo_sml.png);
+  background-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/gal_logo_sml.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,7 +198,7 @@ nav a.pure-menu-link:hover {
 }
 
 .large-logo {
-  background-image: url(/img/gal_logo_lg.png);
+  background-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/gal_logo_lg.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ nav a.pure-menu-link:hover {
 /*-------------------*/
 
 #fixed-bg-img-1 {
-  background-image: url(/img/wocintech_1.jpg);
+  background-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/wocintech_1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ nav a.pure-menu-link:hover {
 }
 
 #fixed-bg-img-2 {
-  background-image: url(/img/wocintech_2.jpg);
+  background-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/wocintech_2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
