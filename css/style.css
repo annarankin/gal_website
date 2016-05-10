@@ -126,11 +126,11 @@ h2 {
   height: 1em;
   width: 0.85em;
   background-color: #777;
-  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-image: url(https://cdn.rawgit.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/meetup-logo.svg);
+  mask-image: url(https://cdn.rawgit.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -143,11 +143,11 @@ h2 {
   height: .8em;
   width: 1.5em;
   background-color: #000000;
-  -webkit-mask-image: url(/img/meetup-logo.svg);
+  -webkit-mask-image: url(https://cdn.rawgit.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(/img/meetup-logo.svg);
+  mask-image: url(https://cdn.rawgit.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
