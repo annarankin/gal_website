@@ -13,7 +13,7 @@ html, button, input, select, textarea,
 /* Utility & universal styling */
 /*-----------------------------*/
 body {
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 
 * {
@@ -52,7 +52,7 @@ p {
 }
 
 div.spotlighted {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #46C0C4;
   background-color: rgba(0,0,0,0.05);
   padding: 1em;
@@ -126,11 +126,11 @@ h2 {
   height: 1em;
   width: 0.85em;
   background-color: #777;
-  -webkit-mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
+  -webkit-mask-image: url(/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
+  mask-image: url(/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -143,11 +143,11 @@ h2 {
   height: .8em;
   width: 1.5em;
   background-color: #000000;
-  -webkit-mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
+  -webkit-mask-image: url(/img/meetup-logo.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(https://raw.githubusercontent.com/annarankin/gal_website/gh-pages/img/meetup-logo.svg);
+  mask-image: url(/img/meetup-logo.svg);
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -203,8 +203,9 @@ nav a.pure-menu-link:hover {
   background-position: center;
   background-repeat: no-repeat;
   margin: 5em auto 0;
-  height: 400px;
-  width: 500px;
+  height: 300px;
+  width: 375px;
+  position: relative;
 }
 
 .large-logo:hover .attribution {
@@ -216,8 +217,9 @@ nav a.pure-menu-link:hover {
   display: none;
   margin: 0;
   text-align: right;
-  padding-top: 350px;
-  padding-right: 50px;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
 }
 
 /*--------------------*/
@@ -231,6 +233,15 @@ nav a.pure-menu-link:hover {
 #team-photo {
   padding: 25% 50%;
   width 100%;
+  position: relative;
+}
+
+#team-photo .attribution {
+  display: block;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.5em;
 }
 
 /*------------------*/
@@ -261,9 +272,9 @@ nav a.pure-menu-link:hover {
   font-size: 30px;
   width: 40px;
   height: 40px;
-  text-align: center;
-  padding-left: 2px;
-  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
@@ -308,7 +319,7 @@ nav a.pure-menu-link:hover {
 }
 
 #facebook-feed {
-  min-width: 350px;
+  min-width: 225px;
 }
 
 .social-media-feeds #facebook-feed .content {
@@ -457,8 +468,19 @@ i.fa.fa-2x.fa-arrow-up {
 /*-----------------*/
 
 @media screen and (max-width: 40em) {
+  #team-photo .attribution {
+    display: none;
+  }
+  #anchor {
+    bottom: 5em;
+    right: 1em;
+    margin: 0 0.25em .7em 0;
+  }
   h2 {
     font-size: 1.25em;
+  }
+  h3.sponsorship-text {
+    font-size: 1em;
   }
   .navbar {
     background-color: white;
@@ -468,10 +490,14 @@ i.fa.fa-2x.fa-arrow-up {
   }
   #header-nav {
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   nav .pure-menu-item a {
     color: #46C0C4;
     font-size: 0.75em;
+    padding:0;
   }
   nav .logo {
     padding: 0;
@@ -480,7 +506,7 @@ i.fa.fa-2x.fa-arrow-up {
     margin-top: 2.5em;
   }
   .about-us .spotlighted {
-    font-size: 1.15em;
+    font-size: 1em;
   }
   .photos {
     display: none;
