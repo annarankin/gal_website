@@ -229,8 +229,11 @@ nav a.pure-menu-link:hover {
 }
 
 #team-photo {
+  background-image: url(/img/core-team.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 25% 50%;
-  width 100%;
+  width: 100%;
 }
 
 /*------------------*/
