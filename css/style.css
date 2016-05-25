@@ -215,6 +215,7 @@ nav a.pure-menu-link:hover {
 .attribution {
   font-size: 0.7em;
   display: none;
+  line-height: 1.75em;
   margin: 0;
   text-align: right;
   position: absolute;
@@ -471,9 +472,6 @@ i.fa.fa-2x.fa-arrow-up {
 /*-----------------*/
 
 @media screen and (max-width: 40em) {
-  #team-photo .attribution {
-    display: none;
-  }
   #anchor {
     bottom: 5em;
     right: 1em;
@@ -521,6 +519,12 @@ i.fa.fa-2x.fa-arrow-up {
     margin: 0 0.25em 1.75em 0.25em;
   }
   .fixed-bg-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 60em) {
+   #team-photo .attribution {
     display: none;
   }
 }
